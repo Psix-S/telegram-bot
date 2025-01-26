@@ -133,7 +133,7 @@ def main():
     dp.add_handler(MessageHandler(filters.StatusUpdate.NEW_CHAT_MEMBERS, handle_new_chat_members))
     dp.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     updater.start_webhook(listen="0.0.0.0", port=80, url_path="/")
-    updater.bot.set_webhook("telegram-6iwyupztd-psix-ss-projects.vercel.app" + "/") # <---- ВОТ ТУТ ВАМ НУЖНО ЗАМЕНИТЬ
+    updater.bot.set_webhook("https://telegram-bot-sigma-amber.vercel.app/" + "/") # <---- ВОТ ТУТ ВАМ НУЖНО ЗАМЕНИТЬ
     updater.idle()
 
 
